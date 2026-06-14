@@ -1,7 +1,7 @@
 #!/bin/bash
 # copied from: https://github.com/luisespino/assembly/tree/main/emulate-raspios-arm64-on-qemu, only thing i changed was the ^ to \ , and changed the path, and added #!/bin/bash (and added these comments but do i really need to say that?)
 # also why the fuck is the echo the only english part of the README
-"/mnt/c/Program Files/qemu/qemu-system-aarch64.exe" \
+"qemu-system-aarch64" \
   -M raspi3b \
   -cpu cortex-a53 \
   -m 1G -smp 4 \
