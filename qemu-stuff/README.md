@@ -1,6 +1,6 @@
 # this qemu-stuff folder is for me to emulate Raspberry Pi OS Legacy Lite 64 bit on QEMU
 
-so if you're already on like ARM64 gtfo of this folder :)
+so if you're already on like ARM64 gtfo of this folder, and delete it if you want :)
 
 anyways here's the links to the resources:
 https://github.com/luisespino/assembly/tree/main/emulate-raspios-arm64-on-qemu, and yes this link is spanish but whatever
