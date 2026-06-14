@@ -6,3 +6,5 @@ anyways here's the links to the resources:
 https://github.com/luisespino/assembly/tree/main/emulate-raspios-arm64-on-qemu, and yes this link is spanish but whatever
 
 https://www.raspberrypi.com/software/operating-systems/, for this one scroll down and click Download on Raspberry Pi OS Legacy Lite 64 bit
+
+btw if you're on windows fuck you, WSL doesn't work either, so you'll need an actual Linux machine
