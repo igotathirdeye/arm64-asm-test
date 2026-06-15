@@ -1,1 +1,0 @@
-scp -P 5555 test.s -J linxcretpi@localhost:~
