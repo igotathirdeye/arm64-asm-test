@@ -10,7 +10,7 @@ if you're on like x86_64/anything not ARM64, go into the qemu-stuff folder and d
 >
 > `ld test.o -o test`
 >
-> to run the test file (and get 5):
+> to run the test file:
 > 
 > `./test`
 >
