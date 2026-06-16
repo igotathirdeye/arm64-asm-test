@@ -9,12 +9,7 @@ if you're on like x86_64/anything not ARM64 do this:
 
 `sudo apt install qemu-user`
 
-`aarch64-linux-gnu-as -o test.o test.s`
-
-`aarch64-linux-gnu-ld -static -o test test.o`
-
-`qemu-aarch64 ./test`
-
+and then run compile.sh.
 
 > [!NOTE]
 > for ARM64 just run these commands:
