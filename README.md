@@ -9,6 +9,10 @@ if you're on like x86_64/anything not ARM64 do this:
 
 `sudo apt install qemu-user`
 
+`sudo apt install libncurses-dev:arm64` 
+
+`sudo apt install libncursesw5-dev:arm64`
+
 and then run compile.sh.
 
 > [!NOTE]
