@@ -13,6 +13,10 @@ if you're on like x86_64/anything not ARM64 do this:
 
 `sudo apt install libncursesw5-dev:arm64`
 
+if you get errors about could not find the arm64 packages, do this:
+
+`sudo dpkg --add-architecture arm64`
+
 and then run compile.sh.
 
 > [!NOTE]
