@@ -19,11 +19,7 @@ if you get errors about could not find the arm64 packages, do this:
 
 and then try again.
 
-if it still doesn't work, try:
-
-`sudo apt install libncurses-dev`
-
-`sudo apt install libncursesw5-dev`
+if it still doesn't work you're fucked (amd64 will not work :) )
 
 and then run compile.sh.
 
