@@ -123,11 +123,14 @@ int setup() {
         endwin();
         return 1;
     } else {
-        mvprintw(LINES/2, COLS/2 - strlen("Success! When you continue, you will be greeted back into the terminal.")/2, "Success! When you continue, you will be greeted back into the terminal.");
-        mvprintw(LINES/2+1, COLS/2 - strlen("Compile main.c, and you should (hopefully) be into the console!")/2, "Compile main.c, and you should (hopefully) be into the console!");
+        mvprintw(LINES/2, COLS/2 - strlen("Success!")/2, "Success!");
     }
     refresh();
     getch();
+
+    clear();
+    chmod("compress/compile.sh", 0755);
     endwin();
+    int resultt = system("cd compress && ./compile.sh");
     return 0;
 }
