@@ -1,6 +1,19 @@
 # ARM64-asm-test
 uhhh just click Download as ZIP
 
+> [!IMPORTANT]
+> Supported environments:
+>
+> Native Linux
+> 
+> WSL2
+>
+> ARM64 Linux (not tested but should work)
+>
+
+> [!CAUTION]
+> DO NOT USE Crostini, it does not have ARM64 on the repos (atleast from my testers), so the libncurses packages will not install
+
 if you're on like x86_64/anything not ARM64 do this:
 
 `sudo apt update`
@@ -21,7 +34,7 @@ and then try again.
 
 if it still doesn't work you're fucked (amd64 will not work :) )
 
-and then run compile.sh.
+once you're done installing the packages, run compile.sh.
 
 > [!NOTE]
 > for ARM64 just run these commands:
