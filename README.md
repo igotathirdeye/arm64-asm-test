@@ -20,6 +20,8 @@ if you're on like x86_64/anything not ARM64 do this:
 
 `sudo apt install gcc-aarch64-linux-gnu`
 
+`sudo apt install g++-aarch64-linux-gnu`
+
 `sudo apt install qemu-user`
 
 `sudo apt install libncurses-dev:arm64` 
