@@ -42,3 +42,6 @@ once you're done installing the packages, run compile.sh.
 
 > [!NOTE]
 > for ARM64 ~~just run these commands:~~ uhhh ig edit compile.sh to not use qemu-user and not use the cross-compiler
+
+
+> <sub>the word "testers" means "friend on a chromebook" in this README.md.</sub>
