@@ -5,11 +5,13 @@ uhhh just click Download as ZIP
 > Supported environments:
 >
 > Native Linux
-> 
-> WSL2
 >
 > ARM64 Linux (not tested but should work)
+
+> [!NOTE]
+> WSL used to be a supported environment, however since it does not expose /dev/dri, the farthest you will get is the menu. the main part will just show a black screen since SDL cannot get the KMS/DRM to work properly if /dev/dri isn't there (source: whatever i remembered from probably a senior dev on StackOverflow)
 >
+> You *might* be able to edit the graphics to use the /dev/dxg but i don't think it's worth it.
 
 > [!CAUTION]
 > DO NOT USE Crostini, it does not have ARM64 on the repos (atleast from my testers), so the libncurses packages will not install
