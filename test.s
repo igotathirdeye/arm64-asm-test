@@ -1,4 +1,5 @@
 .global _start
+.extern menu
 
 .section .text
 _start:
@@ -10,9 +11,7 @@ _start:
     mov x8, 64
     svc 0
 
-	// returns 0 (success)
-	mov x0, 0
-
+	bl setup
 	mov x8, 93
 	svc 0
 .section .rodata

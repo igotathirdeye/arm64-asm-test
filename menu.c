@@ -25,7 +25,8 @@ int setup() {
         }
     }
 
-    mvprintw(LINES/2, COLS/2 - strlen("welcome to arm64-asm-test")/2, "welcome to arm64-asm-test");
+    mvprintw(LINES/2-1, COLS/2 - strlen("welcome to arm64-asm-test")/2, "welcome to arm64-asm-test");
+    mvprintw(LINES/2, COLS/2 - strlen("please make sure to manually run build.sh before this")/2, "please make sure to manually run build.sh before this");
     mvprintw(LINES/2+1, COLS/2 - strlen("<press any key to continue>")/2, "<press any key to continue>");
     refresh();
     getch();
@@ -43,7 +44,7 @@ int setup() {
         }
     }
 
-    const char *options[] = {
+    char *options[] = {
         "lightweight version (no built-in stuff)",
         "normal version"
     };
@@ -88,6 +89,28 @@ int setup() {
             mvaddch(starty + y, startx + x, ' ');
         }
     }
+
+    mvprintw(LINES/2, COLS/2 - strlen("Target hardware:")/2, "Target hardware:");
+    mvprintw(LINES/2+1, COLS/2 - strlen("Resolution: 800x600 (4:3)")/2, "Resolution: 800x600 (4:3)");
+    mvprintw(LINES/2+2, COLS/2 - strlen("Input: D-Pad + A,B,X,Y + Start, Select")/2, "Input: D-Pad + A,B,X,Y + Start, Select");
+    mvprintw(LINES/2+3, COLS/2 - strlen("GPU: KMS/DRM")/2, "GPU: KMS/DRM");
+    mvprintw(LINES/2+4, COLS/2 - strlen("CPU: ARM64")/2, "CPU: ARM64");
+
+    refresh();
+    getch();
+    clear();
+
+    height = LINES * 0.75;
+    width = COLS * 0.75;
+    starty = (LINES - height) / 2;
+    startx = (COLS - width) / 2;
+
+    for (int y = 0; y < height; y++) {
+        for (int x = 0; x < width; x++) {
+            mvaddch(starty + y, startx + x, ' ');
+        }
+    }
+
     mvprintw(LINES/2, COLS/2 - strlen("please wait...")/2, "please wait...");
     refresh();
     sleep(1);
@@ -131,6 +154,6 @@ int setup() {
     clear();
     chmod("compress/compile.sh", 0755);
     endwin();
-    int resultt = system("cd compress && ./compile.sh");
+    system("cd compress && ./compile.sh");
     return 0;
 }
