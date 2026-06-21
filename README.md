@@ -41,14 +41,4 @@ if it still doesn't work you're fucked (amd64 will not work :) )
 once you're done installing the packages, run compile.sh.
 
 > [!NOTE]
-> for ARM64 just run these commands:
-> 
-> `as test.s -o test.o`
->
-> `ld test.o -o test`
->
-> to run the test file:
-> 
-> `./test`
->
-> `echo $?`
+> for ARM64 ~~just run these commands:~~ uhhh ig edit compile.sh to not use qemu-user and not use the cross-compiler
