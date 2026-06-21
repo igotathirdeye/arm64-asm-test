@@ -1,2 +1,2 @@
 3.5inch HDMI Capacitive Touch IPS LCD Display (E), 640×480, Audio jack
-Raspberry Pi Zero WH
+Raspberry Pi Zero 2 WH
