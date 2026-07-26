@@ -40,8 +40,10 @@ if it still doesn't work you're fucked (amd64 will not work :) )
 
 > [!NOTE]
 > hello it is me, igotathirdeye from the Linux machine.
+> 
 > turns out Linux Mint 22.3 Zena is stupid and does not have the fucking arm64 repos built in
-> so yeah if you're using that specific linux distro sorry (unless you wanna do like some bullshit ass magic)
+> 
+> so yeah if you're using that specific linux distro sorry cuz sudo dpkg does not work (unless you wanna do like some bullshit ass magic)
 
 once you're done installing the packages, run compile.sh.
 
